@@ -2,6 +2,11 @@
 ## v1.13
 - Update action to run on Node20. https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/
 
+## v1.13
+- Update action to run on Node20. https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/
+- Update @actions/http-client to 2.2.1
+- Update code to support the new version of @actions/http-toolkit
+
 ## v1.12
 - Update action/core dependency to 1.10.0
 
