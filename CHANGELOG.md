@@ -2,6 +2,9 @@
 ## v1.13
 - Update action to run on Node20. https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/
 
+## v1.13.1
+- Apply custom filters to chart-verifier install requests [#109](https://github.com/redhat-actions/openshift-tools-installer/pull/109)
+
 ## v1.13
 - Update action to run on Node20. https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/
 - Update @actions/http-client to 2.2.1

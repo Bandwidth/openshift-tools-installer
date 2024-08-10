@@ -86,6 +86,15 @@ export async function findMatchingClient(source: string, client: InstallableClie
     else if (client === Inputs.YQ && source === GITHUB) {
         filters = [ filterByOS, filterByArch, filterByNotZipped ];
     }
+    // chart-verifier only publishes a linux binary, but publishes other release
+    // assets that are not in an archive format.
+    else if (client === Inputs.CHART_VERIFIER && source === GITHUB) {
+        filters = [
+            filterByZipped,
+            filterByExecutable.bind(client),
+            filterByVersioned.bind(clientVersion),
+        ];
+    }
     else {
         // these filters are used for all the other clients.
         filters = [ filterByOS, filterByArch, filterByZipped ];
