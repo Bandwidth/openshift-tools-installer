@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: openshift-tools-installer
+  description: |-
+    Download, install and cache OpenShift binaries into your GitHub Actions runners.
+  annotations:
+    github.com/project-slug: Bandwidth/openshift-tools-installer
+    organization: BW
+    costCenter: BAND Platform - PaaS
+spec:
+  type: GitHub Action
+  owner: github/band-platform-paas
+  lifecycle: production

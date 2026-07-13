@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: openshift-tools-installer-location
+  description: Links to additional entities in the openshift-tools-installer repository.
+  annotations:
+    github.com/project-slug: Bandwidth/openshift-tools-installer
+spec:
+  targets:
+    - ./component.yaml
